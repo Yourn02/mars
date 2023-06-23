@@ -8,6 +8,7 @@ from pymongo import MongoClient
 # db = client.dbsparta
 
 dotenv_path = join(dirname(__file__), '.env')
+MONGODB_URI = MongoClient("MONGODB_URI")
 DB_NAME =  os.environ.get("DB_NAME")
 
 client = MongoClient(MONGODB_URI)
